@@ -1,0 +1,237 @@
+/* line 17, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 17, ../sass/all.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* line 20, ../sass/all.sass */
+a {
+  color: white;
+}
+/* line 22, ../sass/all.sass */
+a:hover {
+  color: bisque;
+}
+
+/* line 24, ../sass/all.sass */
+p {
+  color: #444444;
+  line-height: 1.5em;
+}
+
+/* line 30, ../sass/all.sass */
+.clearBoth:before, .nav-stly:before, .head-zone:before, .main:before, .foot-page:before, .clearBoth:after, .nav-stly:after, .head-zone:after, .main:after, .foot-page:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* line 35, ../sass/all.sass */
+.margin-b, .nav-stly, .head-zone, .main {
+  margin-bottom: 2em;
+}
+
+/* line 53, ../sass/all.sass */
+.gridStyle {
+  width: 100%;
+  padding: 0 20em;
+}
+
+/* line 56, ../sass/all.sass */
+.nav-stly {
+  position: relative;
+  height: 60px;
+  font-family: helvetica;
+  background: #38a4ab;
+}
+
+/* line 63, ../sass/all.sass */
+.head-zone {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 71, ../sass/all.sass */
+.main {
+  position: relative;
+  font-family: helvetica;
+}
+
+/* line 76, ../sass/all.sass */
+.foot-page {
+  height: 40px;
+  font-family: helvetica;
+  background: #242d3c;
+}
+
+/* line 85, ../sass/all.sass */
+.nav-icon {
+  position: relative;
+  display: none;
+}
+
+/* line 88, ../sass/all.sass */
+.logo {
+  position: relative;
+  float: left;
+  display: block;
+  font-size: 22pt;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+/* line 96, ../sass/all.sass */
+ul.navbar {
+  float: right;
+}
+/* line 98, ../sass/all.sass */
+ul.navbar li {
+  float: left;
+  font-size: 14pt;
+}
+/* line 101, ../sass/all.sass */
+ul.navbar li a {
+  display: block;
+  padding: 0 1em;
+  line-height: 60px;
+}
+/* line 105, ../sass/all.sass */
+ul.navbar li a:hover {
+  color: saddlebrown;
+  background-color: bisque;
+}
+
+/* line 116, ../sass/all.sass */
+.w-middle {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+/* line 120, ../sass/all.sass */
+.w-large {
+  float: left;
+  width: 40%;
+  padding: 10px;
+}
+
+/* line 124, ../sass/all.sass */
+.product-group {
+  padding: 1em;
+  border: 1px solid #dddddd;
+  background: #fafafa;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 129, ../sass/all.sass */
+.product-group .product-img {
+  width: 100%;
+  max-height: 180px;
+  background: slategrey;
+  overflow: hidden;
+}
+/* line 134, ../sass/all.sass */
+.product-group .product-img img {
+  width: 100%;
+}
+/* line 137, ../sass/all.sass */
+.product-group .product-title {
+  font-size: 1.2em;
+  line-height: 3em;
+  font-weight: 700;
+  color: #38a4ab;
+}
+/* line 142, ../sass/all.sass */
+.product-group .product-tag {
+  font-size: 10pt;
+  line-height: 3em;
+  border: 4px solid #242d3c;
+  background: #242d3c;
+}
+/* line 147, ../sass/all.sass */
+.product-group p {
+  font-size: 11pt;
+}
+
+/* line 151, ../sass/all.sass */
+.foot-tetx {
+  margin: 0 auto;
+}
+/* line 153, ../sass/all.sass */
+.foot-tetx p {
+  color: #38a4ab;
+  font-size: 10pt;
+  text-align: center;
+  line-height: 40px;
+}
