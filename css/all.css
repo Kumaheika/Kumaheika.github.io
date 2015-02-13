@@ -1,4 +1,4 @@
-/* line 17, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -356,77 +356,129 @@ ul.navbar li a:hover {
   background: slategrey;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 242, ../sass/all.sass */
 .product-style .product-img img {
   width: 100%;
 }
 /* line 244, ../sass/all.sass */
+=======
+/* line 241, ../sass/all.sass */
+.product-style .product-img img {
+  width: 100%;
+}
+/* line 243, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .product-style .product-title {
   font-size: 1.2em;
   line-height: 3em;
   font-weight: 700;
   color: #38a4ab;
 }
+<<<<<<< HEAD
 /* line 249, ../sass/all.sass */
+=======
+/* line 248, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
   padding: 5px;
   background: #38a4ab;
 }
+<<<<<<< HEAD
 /* line 254, ../sass/all.sass */
+=======
+/* line 253, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .product-style p {
   font-size: 11pt;
 }
 
+<<<<<<< HEAD
 /* line 258, ../sass/all.sass */
+=======
+/* line 257, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .aboutMe-range {
   width: 1200px;
   margin: 0 auto;
   padding: 2em;
 }
+<<<<<<< HEAD
 /* line 263, ../sass/all.sass */
+=======
+/* line 262, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .aboutMe-range .ab-myphoto {
   float: left;
   width: 30%;
   padding: 2em;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 268, ../sass/all.sass */
+=======
+/* line 267, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .aboutMe-range .ab-myphoto img {
   max-width: 200px;
   height: auto;
 }
+<<<<<<< HEAD
 /* line 271, ../sass/all.sass */
+=======
+/* line 270, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .aboutMe-range .ab-title {
   color: white;
   font-size: 32pt;
   margin-bottom: 0.5em;
 }
+<<<<<<< HEAD
 /* line 275, ../sass/all.sass */
+=======
+/* line 274, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .aboutMe-range .ab-txt {
   float: right;
   width: 70%;
   padding: 2em;
   text-align: left;
 }
+<<<<<<< HEAD
 /* line 280, ../sass/all.sass */
+=======
+/* line 279, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .aboutMe-range .ab-txt p {
   margin-bottom: 1em;
   color: white;
   font-size: 14pt;
 }
 
+<<<<<<< HEAD
 /* line 287, ../sass/all.sass */
+=======
+/* line 286, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .linkpage-size .product-tag {
   background-color: steelblue;
 }
 
+<<<<<<< HEAD
 /* line 291, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
 /* line 293, ../sass/all.sass */
+=======
+/* line 290, ../sass/all.sass */
+.foot-tetx {
+  margin: 0 auto;
+}
+/* line 292, ../sass/all.sass */
+>>>>>>> ce79ea3f5c60611a1235049f59e2d8ba5ec8a8e0
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;
