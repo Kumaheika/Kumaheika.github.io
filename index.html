@@ -3,12 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Kumaheika" name="author">
+	<meta content="KUMAKOBO" name="og:site_name">
 	<title>HTML erb + susy2 + git 練習</title>
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="slick/slick.css">
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//unslider.com/unslider.js"></script>
+	<script src="jq/unslider-set.js"></script>
+	<script src="jq/top.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<!-- <div class="container">
@@ -16,7 +24,8 @@
 		<div class="box1">Yamy</div>
 		<div class="box2"></div>
 	</div> -->
-	<nav class="nav-stly  gridStyle">
+	<div class="top"></div>
+	<nav id="top-bar" class="nav-stly  gridStyle">
 		<div class="nav-icon">>&#9776;</div>
 		<div class="logo"><a href="#">Kumakobo</a></div>
 		<ul class="navbar">
@@ -25,16 +34,37 @@
 			<li><a href="#">Contact</a></li>
 		</ul>
 	</nav>
-	<header class="head-zone">
+	<!-- Slider show -->
+	<div class="banner  banner-style">
+		<a href="#" class="unslider-arrow prev"><</a>
+<a href="#" class="unslider-arrow next">></a>
+<ul>
+    <li class="banner-img">
+    	<h1>this is a pic.</h1>
+    	<img src="images/banner_01.jpg" alt="b01">
+    </li>
+    <li class="banner-img">
+    	<h1>this is a pic.</h1>
+    	<img class="vertical-align-style" src="images/banner_02.jpg" alt="b02">
+    </li>
+    <li class="banner-img">
+    	<h1>this is a pic.</h1>
+    	<img class="vertical-align-style" src="images/banner_03.jpg" alt="b03">
+    </li>
+</ul>
+	</div>
+
+	<!-- 暫時用不到了 -->
+	<!-- <header class="head-zone">
 		<div class="slideshow">
-	<div><img src="images/slide_01.png" alt="p01"></div>
-	<div><img src="images/slide_02.png" alt="p02"></div>
-	<div><img src="images/slide_03.png" alt="p03"></div>
-	<div><img src="images/slide_04.png" alt="p04"></div>
-	<div><img src="images/slide_01.png" alt="p01"></div>
-	<div><img src="images/slide_02.png" alt="p02"></div>
-	<div><img src="images/slide_03.png" alt="p03"></div>
-	<div><img src="images/slide_04.png" alt="p04"></div>
+	<div class="slide-img"><img src="images/slide_01.png" alt="p01"></div>
+	<div class="slide-img"><img src="images/slide_02.png" alt="p02"></div>
+	<div class="slide-img"><img src="images/slide_03.png" alt="p03"></div>
+	<div class="slide-img"><img src="images/slide_04.png" alt="p04"></div>
+	<div class="slide-img"><img src="images/slide_01.png" alt="p01"></div>
+	<div class="slide-img"><img src="images/slide_02.png" alt="p02"></div>
+	<div class="slide-img"><img src="images/slide_03.png" alt="p03"></div>
+	<div class="slide-img"><img src="images/slide_04.png" alt="p04"></div>
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -42,15 +72,14 @@
 			// dots: true, //小點控制器
 			infinite: true, //循環
 			speed: 300, //速度
-			slidesToShow: 5, //畫面同時顯示張數
-			slidesToScroll: 4, //換頁切換張數
+			slidesToShow: 4, //畫面同時顯示張數
+			// slidesToScroll: 4, //換頁切換張數
 			arrows: false, // 箭頭
 			// fade: true,
 			// slide: 'div',
 			// cssEase: 'linear',
-			centerMode: true, //一張一個 dot
 			// slidesToShow: 1, //一張一個 dot
-			// centerMode: true, //一張一個 dot ，該dot置中
+			centerMode: true, //一張一個 dot ，該dot置中
 			// variableWidth: true, //一張一個 dot
 			// adaptiveHeight: true, //隨著該div縮放尺寸
 			autoplay: true, //自動撥放
@@ -86,39 +115,143 @@
 		});
 	});
 </script>
-	</header>
+	</header> -->
+
+	<!-- 前端作品 -->
 	<div class="main  gridStyle">
-		<div class="w-middle">
-	<div class="product-group">
-		<div class="product-img">
-			<img src="images/title_img.png" alt="pr-img">
-		</div>
+		<div class="product-Msize">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/title_img.png" alt="pr-img">
 		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<a class="product-tag">flash</a>
+		<span class="product-tag">Ajax</span>
+		<span class="product-tag">Css</span>
+		<span class="product-tag">JQ</span>
+		<span class="product-tag">Node</span>
+		<span class="product-tag">Angular</span>
+
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
 	</div>
-</div>
-<div class="w-large">
-	<div class="product-group">
-		<div class="product-img">
-			<img src="images/title_img.png" alt="pr-img">
-		</div>
+</a>
+</div><!-- product-link -->
+<div class="product-Msize">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/title_img.png" alt="pr-img">
 		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<a class="product-tag">flash</a>
+		<span class="product-tag">flash</span>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
 	</div>
-</div>
-<div class="w-middle">
-	<div class="product-group">
-		<div class="product-img">
-			<img src="images/title_img.png" alt="pr-img">
-		</div>
+</a>
+</div><!-- product-link -->
+<div class="product-Msize">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/title_img.png" alt="pr-img">
 		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<a class="product-tag">flash</a>
+		<span class="product-tag">flash</span>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
 	</div>
-</div>
+</a>
+</div><!-- product-link -->
+<div class="product-Msize">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/title_img.png" alt="pr-img">
+		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
+		<span class="product-tag">flash</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
 	</div>
+</a>
+</div><!-- product-link -->
+	</div>
+	<!-- 關於我 -->
+	<div class="aboutMe  gridStyle">
+		<div class="aboutMe-range">
+	<div class="ab-myphoto"><img src="images/Kuma2.png" alt="myphoto"></div>
+	<div class="ab-txt">
+		<h1 class="ab-title">About Me</h1>
+		<p>目前網站持續更新中，預計於<strong class="strong-t">2/14上線</strong>，敬請期待。</p>
+		<p>也歡迎至個人技術紀錄網誌觀看相關訊息<a class="a-link" href="http://www.kumakobo.com/" alt="庫馬亂扣汀">庫馬亂扣汀</a></p>
+	</div>
+</div>
+
+
+	</div>
+	<!-- 設計作品 -->
+	<div class="linkpage  gridStyle">
+		<div class="linkpage-size">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/graphic/g_img_01s.png" alt="pr-img">
+		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
+		<span class="product-tag">Illustrator</span>
+	</div>
+</a>
+</div><!-- product-link -->
+<div class="linkpage-size">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/graphic/g_img_02s.png" alt="pr-img">
+		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
+		<span class="product-tag">Illustrator</span>
+		<span class="product-tag">flash</span>
+	</div>
+</a>
+</div><!-- product-link -->
+<div class="linkpage-size">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/graphic/g_img_03s.png" alt="pr-img">
+		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
+		<span class="product-tag">Illustrator</span>
+		<span class="product-tag">flash</span>
+	</div>
+</a>
+</div><!-- product-link -->
+<div class="linkpage-size">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/graphic/g_img_04s.png" alt="pr-img">
+		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
+		<span class="product-tag">Photoshop</span>
+		<span class="product-tag">Illustrator</span>
+		<span class="product-tag">flash</span>
+	</div>
+</a>
+</div><!-- product-link -->
+<div class="linkpage-size">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/graphic/g_img_05s.png" alt="pr-img">
+		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
+		<span class="product-tag">Illustrator</span>
+		<span class="product-tag">flash</span>
+	</div>
+</a>
+</div><!-- product-link -->
+<div class="linkpage-size">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/graphic/g_img_06s.png" alt="pr-img">
+		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
+		<span class="product-tag">Illustrator</span>
+		<span class="product-tag">flash</span>
+	</div>
+</a>
+</div><!-- product-link -->
+<div class="linkpage-size">
+<a href="#">
+	<div class="product-style">
+		<img class="product-img" src="images/graphic/g_img_07s.png" alt="pr-img">
+		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
+		<span class="product-tag">Illustrator</span>
+		<span class="product-tag">flash</span>
+	</div>
+</a>
+</div><!-- product-link -->
+	</div>
+	<!-- 頁尾資訊 -->
 	<footer class="foot-page  gridStyle">
 		<div class="foot-tetx">
 			<p>Designed by Kumaheika</p>

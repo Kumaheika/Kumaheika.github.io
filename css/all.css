@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 17, ../sass/all.sass */
+/* line 18, ../sass/all.sass */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -71,73 +71,163 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-decoration: none;
 }
 
-/* line 20, ../sass/all.sass */
+/* line 21, ../sass/all.sass */
+body {
+  background-image: url("../images/bg.png");
+}
+
+/* line 23, ../sass/all.sass */
 a {
   color: white;
 }
-/* line 22, ../sass/all.sass */
+/* line 25, ../sass/all.sass */
 a:hover {
   color: bisque;
 }
 
-/* line 24, ../sass/all.sass */
+/* line 27, ../sass/all.sass */
 p {
   color: #444444;
   line-height: 1.5em;
 }
 
 /* line 30, ../sass/all.sass */
-.clearBoth:before, .nav-stly:before, .head-zone:before, .main:before, .foot-page:before, .clearBoth:after, .nav-stly:after, .head-zone:after, .main:after, .foot-page:after {
+.strong-t {
+  padding: 0 0.3em;
+  color: khaki;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* line 35, ../sass/all.sass */
+.a-link {
+  margin: 0 0.3em;
+  padding: 0.3em;
+  color: khaki;
+  border: 1px solid khaki;
+}
+
+/* line 43, ../sass/all.sass */
+.clearBoth:before, .nav-stly:before, .banner:before, .head-zone:before, .main:before, .aboutMe:before, .linkpage:before, .foot-page:before, .aboutMe-range:before, .clearBoth:after, .nav-stly:after, .banner:after, .head-zone:after, .main:after, .aboutMe:after, .linkpage:after, .foot-page:after, .aboutMe-range:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-/* line 35, ../sass/all.sass */
-.margin-b, .nav-stly, .head-zone, .main {
-  margin-bottom: 2em;
+/* line 48, ../sass/all.sass */
+.vertical-align-style, .banner-style .unslider-arrow {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* line 53, ../sass/all.sass */
-.gridStyle {
-  width: 100%;
-  padding: 0 20em;
+.margin-b, .banner, .head-zone, .main, .aboutMe, .linkpage {
+  margin-bottom: 10vh;
 }
 
-/* line 56, ../sass/all.sass */
+/* line 71, ../sass/all.sass */
+.gridStyle {
+  width: 100%;
+  padding: 0 10%;
+}
+
+/* line 74, ../sass/all.sass */
 .nav-stly {
   position: relative;
   height: 60px;
   font-family: helvetica;
   background: #38a4ab;
+  opacity: 1;
 }
 
-/* line 63, ../sass/all.sass */
+/* line 82, ../sass/all.sass */
+.banner {
+  position: relative;
+  max-width: 100%;
+  max-height: 380px;
+  font-family: helvetica;
+}
+
+/* line 89, ../sass/all.sass */
 .head-zone {
   width: 100%;
   margin: 0 auto;
+  height: 380px;
 }
 
-/* line 71, ../sass/all.sass */
+/* line 98, ../sass/all.sass */
 .main {
   position: relative;
   font-family: helvetica;
 }
 
-/* line 76, ../sass/all.sass */
+/* line 103, ../sass/all.sass */
+.aboutMe {
+  font-family: helvetica;
+  background: #38a4ab;
+}
+
+/* line 108, ../sass/all.sass */
+.linkpage {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: helvetica;
+  background: white;
+}
+
+/* line 115, ../sass/all.sass */
 .foot-page {
   height: 40px;
   font-family: helvetica;
   background: #242d3c;
 }
 
-/* line 85, ../sass/all.sass */
+/* line 124, ../sass/all.sass */
+.top {
+  display: block;
+  cursor: pointer;
+  z-index: 999999;
+  position: fixed;
+  right: 3%;
+  bottom: 15%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background: black;
+  opacity: 0.6;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 138, ../sass/all.sass */
+.top:hover {
+  opacity: 1;
+}
+/* line 140, ../sass/all.sass */
+.top::after {
+  content: "^";
+  color: white;
+  font-size: 50pt;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* line 147, ../sass/all.sass */
 .nav-icon {
   position: relative;
   display: none;
 }
 
-/* line 88, ../sass/all.sass */
+/* line 150, ../sass/all.sass */
 .logo {
   position: relative;
   float: left;
@@ -148,43 +238,103 @@ p {
   text-transform: uppercase;
 }
 
-/* line 96, ../sass/all.sass */
+/* line 158, ../sass/all.sass */
 ul.navbar {
   float: right;
 }
-/* line 98, ../sass/all.sass */
+/* line 160, ../sass/all.sass */
 ul.navbar li {
   float: left;
   font-size: 14pt;
 }
-/* line 101, ../sass/all.sass */
+/* line 163, ../sass/all.sass */
 ul.navbar li a {
   display: block;
   padding: 0 1em;
   line-height: 60px;
 }
-/* line 105, ../sass/all.sass */
+/* line 167, ../sass/all.sass */
 ul.navbar li a:hover {
   color: saddlebrown;
   background-color: bisque;
 }
 
-/* line 116, ../sass/all.sass */
-.w-middle {
+/* line 183, ../sass/all.sass */
+.banner-style .unslider-arrow {
+  z-index: 999;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #38a4ab;
+  opacity: 0.3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 193, ../sass/all.sass */
+.banner-style .unslider-arrow:hover {
+  opacity: 0.8;
+}
+/* line 195, ../sass/all.sass */
+.banner-style .prev,
+.banner-style .next {
+  font-size: 100pt;
+  font-weight: 700;
+  line-height: 125px;
+  text-align: center;
+}
+/* line 201, ../sass/all.sass */
+.banner-style .prev {
+  left: 1%;
+}
+/* line 203, ../sass/all.sass */
+.banner-style .next {
+  right: 1%;
+}
+/* line 205, ../sass/all.sass */
+.banner-style .banner-img {
+  position: relative;
   float: left;
-  width: 30%;
-  padding: 10px;
+  background: steelblue;
+}
+/* line 209, ../sass/all.sass */
+.banner-style h1 {
+  z-index: 10;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 0.5em;
+  color: white;
+  font-size: 40pt;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+/* line 221, ../sass/all.sass */
+.banner-style h1:hover {
+  opacity: 1;
 }
 
-/* line 120, ../sass/all.sass */
-.w-large {
+/* line 224, ../sass/all.sass */
+.product-Msize, .linkpage-size {
   float: left;
-  width: 40%;
-  padding: 10px;
+  padding: 15px;
 }
 
-/* line 124, ../sass/all.sass */
-.product-group {
+/* line 227, ../sass/all.sass */
+.product-Msize, .linkpage-size {
+  width: 25%;
+}
+
+/* line 229, ../sass/all.sass */
+.product-style {
   padding: 1em;
   border: 1px solid #dddddd;
   background: #fafafa;
@@ -194,44 +344,92 @@ ul.navbar li a:hover {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 129, ../sass/all.sass */
-.product-group .product-img {
+/* line 234, ../sass/all.sass */
+.product-style:hover {
+  background: #ddeeee;
+}
+/* line 236, ../sass/all.sass */
+.product-style .product-img {
   width: 100%;
   max-height: 180px;
+  border: 1px solid #eeeeee;
   background: slategrey;
   overflow: hidden;
 }
-/* line 134, ../sass/all.sass */
-.product-group .product-img img {
+/* line 242, ../sass/all.sass */
+.product-style .product-img img {
   width: 100%;
 }
-/* line 137, ../sass/all.sass */
-.product-group .product-title {
+/* line 244, ../sass/all.sass */
+.product-style .product-title {
   font-size: 1.2em;
   line-height: 3em;
   font-weight: 700;
   color: #38a4ab;
 }
-/* line 142, ../sass/all.sass */
-.product-group .product-tag {
+/* line 249, ../sass/all.sass */
+.product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
-  border: 4px solid #242d3c;
-  background: #242d3c;
+  padding: 5px;
+  background: #38a4ab;
 }
-/* line 147, ../sass/all.sass */
-.product-group p {
+/* line 254, ../sass/all.sass */
+.product-style p {
   font-size: 11pt;
 }
 
-/* line 151, ../sass/all.sass */
+/* line 258, ../sass/all.sass */
+.aboutMe-range {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+/* line 263, ../sass/all.sass */
+.aboutMe-range .ab-myphoto {
+  float: left;
+  width: 30%;
+  padding: 2em;
+  text-align: center;
+}
+/* line 268, ../sass/all.sass */
+.aboutMe-range .ab-myphoto img {
+  max-width: 200px;
+  height: auto;
+}
+/* line 271, ../sass/all.sass */
+.aboutMe-range .ab-title {
+  color: white;
+  font-size: 32pt;
+  margin-bottom: 0.5em;
+}
+/* line 275, ../sass/all.sass */
+.aboutMe-range .ab-txt {
+  float: right;
+  width: 70%;
+  padding: 2em;
+  text-align: left;
+}
+/* line 280, ../sass/all.sass */
+.aboutMe-range .ab-txt p {
+  margin-bottom: 1em;
+  color: white;
+  font-size: 14pt;
+}
+
+/* line 287, ../sass/all.sass */
+.linkpage-size .product-tag {
+  background-color: steelblue;
+}
+
+/* line 291, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 153, ../sass/all.sass */
+/* line 293, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
-  font-size: 10pt;
+  font-size: 11pt;
   text-align: center;
   line-height: 40px;
 }
