@@ -4,11 +4,7 @@ $(document).ready(function(){
 			scrollTop: 0
 		},400);
 	});
-	$(window).scroll(function(){
-		if( $(this).scrollTop() > 400 ){
-			$('.top').fadeIn('fast');
-		} else {
-			$('.top').stop().fadeOut('fast');
-		}
+	$('.nav-stly').each(function(){
+		
 	});
 });
