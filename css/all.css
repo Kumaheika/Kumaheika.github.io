@@ -319,14 +319,19 @@ ul.navbar li a:hover {
     display: none;
     width: 100%;
     background: #38a4ab;
-    z-index: 999999999;
+    z-index: 9999999;
   }
   /* line 210, ../sass/all.sass */
   ul.navbar li {
     width: 100%;
   }
 }
-/* line 224, ../sass/all.sass */
+/* line 212, ../sass/all.sass */
+.nav-icon-show {
+  display: block !important;
+}
+
+/* line 226, ../sass/all.sass */
 .banner-style .unslider-arrow {
   z-index: 999;
   position: absolute;
@@ -344,11 +349,11 @@ ul.navbar li a:hover {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 234, ../sass/all.sass */
+/* line 236, ../sass/all.sass */
 .banner-style .unslider-arrow:hover {
   opacity: 0.8;
 }
-/* line 236, ../sass/all.sass */
+/* line 238, ../sass/all.sass */
 .banner-style .prev,
 .banner-style .next {
   font-size: 100pt;
@@ -356,21 +361,21 @@ ul.navbar li a:hover {
   line-height: 125px;
   text-align: center;
 }
-/* line 242, ../sass/all.sass */
+/* line 244, ../sass/all.sass */
 .banner-style .prev {
   left: 1%;
 }
-/* line 244, ../sass/all.sass */
+/* line 246, ../sass/all.sass */
 .banner-style .next {
   right: 1%;
 }
-/* line 246, ../sass/all.sass */
+/* line 248, ../sass/all.sass */
 .banner-style .banner-img {
   position: relative;
   float: left;
   background: steelblue;
 }
-/* line 250, ../sass/all.sass */
+/* line 252, ../sass/all.sass */
 .banner-style h1 {
   z-index: 10;
   position: absolute;
@@ -384,12 +389,12 @@ ul.navbar li a:hover {
   text-transform: uppercase;
   opacity: 0.8;
 }
-/* line 262, ../sass/all.sass */
+/* line 264, ../sass/all.sass */
 .banner-style h1:hover {
   opacity: 1;
 }
 
-/* line 265, ../sass/all.sass */
+/* line 267, ../sass/all.sass */
 .product-Msize, .linkpage-size {
   float: left;
   width: 25%;
@@ -397,24 +402,24 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 270, ../sass/all.sass */
+  /* line 272, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 33.33%;
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 273, ../sass/all.sass */
+  /* line 275, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 50%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 276, ../sass/all.sass */
+  /* line 278, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 100%;
   }
 }
-/* line 278, ../sass/all.sass */
+/* line 280, ../sass/all.sass */
 .product-style {
   padding: 1em;
   border: 1px solid #dddddd;
@@ -425,11 +430,11 @@ ul.navbar li a:hover {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 283, ../sass/all.sass */
+/* line 285, ../sass/all.sass */
 .product-style:hover {
   background: #ddeeee;
 }
-/* line 285, ../sass/all.sass */
+/* line 287, ../sass/all.sass */
 .product-style .product-img {
   width: 100%;
   max-height: 180px;
@@ -437,61 +442,61 @@ ul.navbar li a:hover {
   background: slategrey;
   overflow: hidden;
 }
-/* line 291, ../sass/all.sass */
+/* line 293, ../sass/all.sass */
 .product-style .product-img img {
   width: 100%;
 }
-/* line 293, ../sass/all.sass */
+/* line 295, ../sass/all.sass */
 .product-style .product-title {
   font-size: 1.2em;
   line-height: 3em;
   font-weight: 700;
   color: #38a4ab;
 }
-/* line 298, ../sass/all.sass */
+/* line 300, ../sass/all.sass */
 .product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
   padding: 5px;
   background: #38a4ab;
 }
-/* line 303, ../sass/all.sass */
+/* line 305, ../sass/all.sass */
 .product-style p {
   font-size: 11pt;
 }
 
-/* line 307, ../sass/all.sass */
+/* line 309, ../sass/all.sass */
 .aboutMe-range {
   width: 100%;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 312, ../sass/all.sass */
+/* line 314, ../sass/all.sass */
 .aboutMe-range .ab-myphoto {
   float: left;
   width: 30%;
   padding: 2em;
   text-align: center;
 }
-/* line 317, ../sass/all.sass */
+/* line 319, ../sass/all.sass */
 .aboutMe-range .ab-myphoto img {
   max-width: 200px;
   height: auto;
 }
-/* line 320, ../sass/all.sass */
+/* line 322, ../sass/all.sass */
 .aboutMe-range .ab-txt {
   float: right;
   width: 70%;
   padding: 2em;
   text-align: left;
 }
-/* line 325, ../sass/all.sass */
+/* line 327, ../sass/all.sass */
 .aboutMe-range .ab-txt p {
   margin-bottom: 1em;
   color: white;
   font-size: 14pt;
 }
-/* line 329, ../sass/all.sass */
+/* line 331, ../sass/all.sass */
 .aboutMe-range .ab-title {
   color: white;
   font-size: 32pt;
@@ -499,17 +504,17 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 334, ../sass/all.sass */
+  /* line 336, ../sass/all.sass */
   .aboutMe-range {
     padding: 0;
   }
-  /* line 336, ../sass/all.sass */
+  /* line 338, ../sass/all.sass */
   .aboutMe-range .ab-myphoto {
     float: none;
     width: 100%;
     padding: 1em;
   }
-  /* line 340, ../sass/all.sass */
+  /* line 342, ../sass/all.sass */
   .aboutMe-range .ab-txt {
     float: none;
     width: 100%;
@@ -518,22 +523,22 @@ ul.navbar li a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 346, ../sass/all.sass */
+  /* line 348, ../sass/all.sass */
   .ab-txt .a-link {
     display: block;
     margin-top: 0.5em;
   }
 }
-/* line 352, ../sass/all.sass */
+/* line 354, ../sass/all.sass */
 .linkpage-size .product-tag {
   background-color: steelblue;
 }
 
-/* line 356, ../sass/all.sass */
+/* line 358, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 358, ../sass/all.sass */
+/* line 360, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;

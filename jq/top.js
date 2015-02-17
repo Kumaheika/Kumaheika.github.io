@@ -4,4 +4,7 @@ $(document).ready(function(){
 			scrollTop: 0
 		},400);
 	});
+	$('.nav-icon').click(function(){
+		$('ul.navbar').toggleClass('nav-icon-show');
+	});
 });
