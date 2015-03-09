@@ -8,24 +8,43 @@
 	<title>KumaKobo F2E Gogo!!</title>
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="slick/slick.css">
-	<script src="//code.jquery.com/jquery-migrate-1.11.2.min.js"></script>
-	<script type="text/javascript" src="slick/slick.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!-- 上橫頁 -->
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
-	<script src="//unslider.com/unslider.js"></script>
-	<script src="jq/unslider-set.js"></script>
+
+	<script src="jq/jquery.colorbox.js"></script>
 	<!-- Top功能 -->
 	<script src="jq/top.js"></script>
+	<!-- colorbox專用 -->
+	<script>
+		$(document).ready(function(){
+			$(".group1").colorbox({rel:'group1'});
+			$(".ajax").colorbox();
+			$(".iframe").colorbox({iframe:true, width:"60%", height:"80%"});
+			$(".inline").colorbox({inline:true, width:"50%"});
+			$(".callbacks").colorbox({
+				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+			});
+
+			$('.non-retina').colorbox({rel:'group5', transition:'none'})
+			$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+			
+			//Example of preserving a JavaScript event for inline calls.
+			$("#click").click(function(){ 
+				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+				return false;
+			});
+		});
+	</script>
 	<!--[if IE]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body>
-	<!-- <div class="container">
-		純粹 Susy 設定@@@@
-		<div class="box1">Yamy</div>
-		<div class="box2"></div>
-	</div> -->
 	<div class="top"></div>
 	<nav id="top-bar" class="nav-stly  gridStyle">
 		<div class="logo"><a href="#">Kumakobo</a></div>
@@ -34,175 +53,43 @@
 			<li><a class="btn-aboutMe" href="#">About</a></li>
 			<li><a class="btn-linkpage" href="#">Product</a></li>
 			<li><a class="btn-about" href="#">Contact</a></li>
+			<li><a class="btn-github" href="https://github.com/Kumaheika/Kumaheika.github.io">Github</a></li>
 		</ul>
 	</nav>
-	<!-- Slider show -->
-	<div class="banner  banner-style">
-		<a href="#" class="unslider-arrow prev"><</a>
-<a href="#" class="unslider-arrow next">></a>
-<ul>
-    <li class="banner-img">
-    	<h1>this is a pic.</h1>
-    	<img src="images/banner_01.jpg" alt="b01">
-    </li>
-    <li class="banner-img">
-    	<h1>this is a pic.</h1>
-    	<img class="vertical-align-style" src="images/banner_02.jpg" alt="b02">
-    </li>
-    <li class="banner-img">
-    	<h1>this is a pic.</h1>
-    	<img class="vertical-align-style" src="images/banner_03.jpg" alt="b03">
-    </li>
-</ul>
-	</div>
-
-	<!-- 暫時用不到了 -->
-	<!-- <header class="head-zone">
+	<div class="head-zone">
 		<div class="slideshow">
-	<div class="slide-img"><img src="images/slide_01.png" alt="p01"></div>
-	<div class="slide-img"><img src="images/slide_02.png" alt="p02"></div>
-	<div class="slide-img"><img src="images/slide_03.png" alt="p03"></div>
-	<div class="slide-img"><img src="images/slide_04.png" alt="p04"></div>
-	<div class="slide-img"><img src="images/slide_01.png" alt="p01"></div>
-	<div class="slide-img"><img src="images/slide_02.png" alt="p02"></div>
-	<div class="slide-img"><img src="images/slide_03.png" alt="p03"></div>
-	<div class="slide-img"><img src="images/slide_04.png" alt="p04"></div>
+	<div class="slide-img  slide-right">
+		<img src="images/slide_01.png" alt="p01">
+	</div>
+	<div class="slide-img  slide-left">
+		<img src="images/slide_02.png" alt="p02">
+	</div>
+	<div class="slide-img  slide-right">
+		<img src="images/slide_03.png" alt="p03">
+	</div>
+</div>
+<div class="slideshow-mobile">
 </div>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('.slideshow').slick({
-			// dots: true, //小點控制器
-			infinite: true, //循環
-			speed: 300, //速度
-			slidesToShow: 4, //畫面同時顯示張數
-			// slidesToScroll: 4, //換頁切換張數
-			arrows: false, // 箭頭
-			// fade: true,
-			// slide: 'div',
-			// cssEase: 'linear',
-			// slidesToShow: 1, //一張一個 dot
-			centerMode: true, //一張一個 dot ，該dot置中
-			// variableWidth: true, //一張一個 dot
-			// adaptiveHeight: true, //隨著該div縮放尺寸
-			autoplay: true, //自動撥放
-			autoplaySpeed: 2000, //自動撥放間隔時間(毫秒)
+	$(function(){
+		var $slideshow = $('.slideshow'),
+		    $slides = $slideshow.find('.slide-img'),
+		    $counter = $slides.length, //求目前所有 slides 數量
+		    nowPic = 0; //起始標號
 
-
-			// responsive: [ //也可以用 breakpoint 做RWD切換
-		 //    {
-		 //      breakpoint: 1600, //1600以下
-		 //      settings: {
-		 //        slidesToShow: 5,
-		 //        slidesToScroll: 4,
-		 //        infinite: true,
-		 //        dots: true
-		 //      }
-		 //    },
-		 //    {
-		 //      breakpoint: 1024,
-		 //      settings: {
-		 //        slidesToShow: 2,
-		 //        slidesToScroll: 2
-		 //      }
-		 //    },
-		 //    {
-		 //      breakpoint: 480,
-		 //      settings: {
-		 //        slidesToShow: 1,
-		 //        slidesToScroll: 1
-		 //      }
-		 //    }
-		 //  ]
-		  //收尾
-		});
+		$slides.eq(nowPic).fadeIn('slow');
+		setInterval( slideGo , 4500 );
+		function slideGo(){
+			var nextPic = ( nowPic +1 ) % $counter; //用求餘數來計算下一張標號
+			$slides.eq(nowPic).fadeOut('fast');
+			$slides.eq(nextPic).fadeIn('slow');
+			nowPic = nextPic;
+		};
 	});
 </script>
-	</header> -->
-
+	</div>
 	<!-- 前端作品 -->
 	<div class="main  gridStyle">
-		<!-- 假資料產生範例 -->
-<!-- <h2>iste impedit ea totam tenetur at</h2>
-<p><img src="http://placehold.it/640x360" /></p>
-<p>Eos reprehenderit velit corrupti libero exercitationem enim beatae sed in animi. laborum quasi quaerat et laudantium temporibus. quia perspiciatis numquam quos ullam et consequatur recusandae omnis. et fuga tenetur dolor et ut veritatis eum est. quia est consequatur iure rem quae omnis ea et exercitationem molestiae enim. in minus repellendus sed dolores accusantium autem veritatis et vero. nam molestias assumenda excepturi harum et pariatur consequatur velit maxime</p> -->
-
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-
 <div class="product-Msize">
 <a href="http://www.dpp.org.tw/928picnic/" alt="民進黨創黨28th">
 	<div class="product-style">
@@ -225,19 +112,20 @@
 			<span class="product-tag">RWD</span>
 			<span class="product-tag">JQ</span>
 			<span class="product-tag">Colorbox</span>
-			<p>由合作方提供網站內容，負責部分從Wireframe > Mockup > 網站成品，該網站以hand code為主，並另有製作RWD，目前該由合作公司自行維護中。</p>
+			<p>由合作方提供網站內容，負責部分從Wireframe > Mockup > 網站成品，沒有另外使用現有framework架構，完全hand code(除colorbox)，並另有製作RWD，目前該網站由合作公司自行維護中。</p>
 		</div>
 	</div>
 </a>
 </div><!-- product-link -->
 <div class="product-Msize">
-<a href="#">
+<a href="https://www.ickd.org.tw" alt="新慢性腎臟病iCKD心關懷科技網">
 	<div class="product-style">
-		<img class="product-img" src="http://placehold.it/640x360" alt="待更新"/>
+		<img class="product-img" src="images/website/g_img_03s.png" alt="新慢性腎臟病iCKD心關懷科技網">
 		<div class="product-article">
-			<h2 class="product-title">待更新</h2>
-			<span class="product-tag">Web project</span>
-			<p>Lorem ipsum dolor sit amet, ......</p>
+			<h2 class="product-title">新慢性腎臟病iCKD心關懷科技網</h2>
+			<span class="product-tag">RWD</span>
+			<span class="product-tag">JQ</span>
+			<p>由計畫人員共同合作，負責部分從Wireframe > Mockup > 網站成品，為早期製作網站，另有製作RWD，後端部分由國家高速網路中心負責，目前該網站由國家高速網路中心維護中。</p>
 		</div>
 	</div>
 </a>
@@ -249,7 +137,7 @@
 		<div class="product-article">
 			<h2 class="product-title">待更新</h2>
 			<span class="product-tag">Web project</span>
-			<p>Lorem ipsum dolor sit amet, ......</p>
+			<p>等待更新, ......</p>
 		</div>
 	</div>
 </a>
@@ -268,12 +156,11 @@
 	</div>
 </div>
 
-
 	</div>
 	<!-- 設計作品 -->
 	<div class="linkpage  gridStyle">
 		<div class="linkpage-size">
-<a href="#">
+<a href="images/graphic/g_img_01.png" class="group1">
 	<div class="product-style">
 		<img class="product-img" src="images/graphic/g_img_01s.png" alt="百世文教企業logo設計">
 			<div class="product-article">
@@ -285,7 +172,7 @@
 </a>
 </div><!-- product-link -->
 <div class="linkpage-size">
-<a href="http://www.kumakobo.com/kumawu/swf/E_Card/card_2013.swf">
+<a href="./swf/card_2013.swf" class="iframe">
 	<div class="product-style">
 		<img class="product-img" src="images/graphic/g_img_02s.png" alt="合智工業股份有限公司2014年賀卡">
 		<div class="product-article">
@@ -298,20 +185,20 @@
 </a>
 </div><!-- product-link -->
 <div class="linkpage-size">
-<a href="#">
+<a href="images/graphic/g_img_03.png" class="group1">
 	<div class="product-style">
 		<img class="product-img" src="images/graphic/g_img_03s.png" alt="美體塑身衣">
 		<div class="product-article">
 			<h2 class="product-title">美體塑身衣</h2>
 			<span class="product-tag">Illustrator</span>
 			<span class="product-tag">flash</span>
-			<p>合作方公司已不可考，繪製到 as3 獨立一人完成</p>
+			<p>繪製到 as3 獨立一人完成，合作方公司已不可考...</p>
 		</div>
 	</div>
 </a>
 </div><!-- product-link -->
 <div class="linkpage-size">
-<a href="#">
+<a href="images/graphic/g_img_04.png" class="group1">
 	<div class="product-style">
 		<img class="product-img" src="images/graphic/g_img_04s.png" alt="多樂爆米花">
 		<div class="product-article">
@@ -319,13 +206,13 @@
 			<span class="product-tag">Photoshop</span>
 			<span class="product-tag">Illustrator</span>
 			<span class="product-tag">flash</span>
-			<p>該公司好像已經....繪製到 as3 獨立一人完成</p>
+			<p>繪製到 as3 獨立一人完成，目前該公司好像已經....</p>
 		</div>
 	</div>
 </a>
 </div><!-- product-link -->
 <div class="linkpage-size">
-<a href="http://www.kumakobo.com/kumawu/swf/E_Card/e_card_01.swf">
+<a href="http://www.kumakobo.com/kumawu/swf/E_Card/e_card_01.swf" class="iframe">
 	<div class="product-style">
 		<img class="product-img" src="images/graphic/g_img_05s.png" alt="華通COMPEQ新年賀卡">
 		<div class="product-article">
@@ -338,7 +225,7 @@
 </a>
 </div><!-- product-link -->
 <div class="linkpage-size">
-<a href="http://www.kumakobo.com/kumawu/swf/E_Card/compeq_card.swf">
+<a href="http://www.kumakobo.com/kumawu/swf/E_Card/compeq_card.swf" class="iframe">
 	<div class="product-style">
 		<img class="product-img" src="images/graphic/g_img_06s.png" alt="華通COMPEQ中國年賀卡">
 		<div class="product-article">
@@ -351,7 +238,7 @@
 </a>
 </div><!-- product-link -->
 <div class="linkpage-size">
-<a href="http://www.kumakobo.com/kumawu/swf/E_Card/Card.swf">
+<a href="http://www.kumakobo.com/kumawu/swf/Card.swf" class="iframe">
 	<div class="product-style">
 		<img class="product-img" src="images/graphic/g_img_07s.png" alt="ITE聯陽半導體新年賀卡">
 		<div class="product-article">
@@ -364,13 +251,27 @@
 </a>
 </div><!-- product-link -->
 <div class="linkpage-size">
+<a href="http://www.kumakobo.com/kumawu/swf/game_final_2.swf" class="iframe">
+	<div class="product-style">
+		<img class="product-img" src="images/graphic/g_img_08s.png" alt="遠東新世紀CSR企業社會責任">
+		<div class="product-article">
+			<h2 class="product-title">遠東新世紀CSR企業社會責任</h2>
+			<span class="product-tag">Photoshop</span>
+			<span class="product-tag">flash</span>
+			<span class="product-tag">AS3.0</span>
+			<p>As3.0問答遊戲，獨立完成</p>
+		</div>
+	</div>
+</a>
+</div><!-- product-link -->
+<div class="linkpage-size">
 <a href="#">
 	<div class="product-style">
 		<img class="product-img" src="http://placehold.it/320x180" alt="待更新"/>
 		<div class="product-article">
 			<h2 class="product-title">待更新</h2>
 			<span class="product-tag">Web project</span>
-			<p>Lorem ipsum dolor sit amet, ......</p>
+			<p>等待更新, ......</p>
 		</div>
 	</div>
 </a>
