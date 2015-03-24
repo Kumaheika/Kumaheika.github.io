@@ -8,10 +8,10 @@
 	<title>KumaKobo F2E Gogo!!</title>
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="slick/slick.css">
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="jq/jquery-1.11.2.min.js"></script>
 	<!-- 上橫頁 -->
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
-
+	<script src="jq/unslider-set.js"></script>
 	<script src="jq/jquery.colorbox.js"></script>
 	<!-- Top功能 -->
 	<script src="jq/top.js"></script>
@@ -41,11 +41,28 @@
 			});
 		});
 	</script>
-	<!--[if IE]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
+	<svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<symbol id="icon-envelop" viewBox="0 0 1024 1024">
+			<path d="M928 128h-832c-52.8 0-96 43.2-96 96v640c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-640c0-52.8-43.2-96-96-96zM398.74 550.372l-270.74 210.892v-501.642l270.74 290.75zM176.38 256h671.24l-335.62 252-335.62-252zM409.288 561.698l102.712 110.302 102.71-110.302 210.554 270.302h-626.528l210.552-270.302zM625.26 550.372l270.74-290.75v501.642l-270.74-210.892z"></path>
+		</symbol>
+		<symbol id="icon-display" viewBox="0 0 1024 1024">
+			<path class="path1" d="M0 64v640h1024v-640h-1024zM960 640h-896v-512h896v512zM672 768h-320l-32 128-64 64h512l-64-64z"></path>
+		</symbol>
+		<symbol id="icon-mobile2" viewBox="0 0 1024 1024">
+			<path class="path1" d="M768 0h-576c-35.2 0-64 28.798-64 64v896c0 35.2 28.798 64 64 64h576c35.2 0 64-28.8 64-64v-896c0-35.202-28.8-64-64-64zM480 977.782c-27.492 0-49.782-22.29-49.782-49.782s22.29-49.782 49.782-49.782 49.782 22.29 49.782 49.782-22.29 49.782-49.782 49.782zM768 832h-576v-704h576v704z"></path>
+		</symbol>
+		<symbol id="icon-tablet" viewBox="0 0 1024 1024">
+			<path class="path1" d="M800 0h-640c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h640c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM480 992c-17.672 0-32-14.326-32-32s14.328-32 32-32 32 14.326 32 32-14.328 32-32 32zM768 896h-576v-768h576v768z"></path>
+		</symbol>
+	</defs>
+
 	<div class="top"></div>
 	<nav id="top-bar" class="nav-stly  gridStyle">
 		<div class="logo"><a href="#">Kumakobo</a></div>
@@ -53,31 +70,10 @@
 		<ul class="navbar">
 			<li><a class="btn-aboutMe" href="#">About</a></li>
 			<li><a class="btn-linkpage" href="#">Product</a></li>
-			<li><a class="btn-about" href="#">Contact</a></li>
+			<li><a class="btn-contactMe" href="#">Contact</a></li>
 			<li><a class="btn-github" href="https://github.com/Kumaheika/Kumaheika.github.io">Github</a></li>
 		</ul>
 	</nav>
-
-	<!-- 暫時用不到了 -->
-	<!-- Slider show -->
-	<!-- <div class="banner  banner-style">
-		<a href="#" class="unslider-arrow prev"><</a>
-<a href="#" class="unslider-arrow next">></a>
-<ul>
-    <li class="banner-img">
-    	<h1>this is a pic.</h1>
-    	<img src="images/banner_01.jpg" alt="b01">
-    </li>
-    <li class="banner-img">
-    	<h1>this is a pic.</h1>
-    	<img class="vertical-align-style" src="images/banner_02.jpg" alt="b02">
-    </li>
-    <li class="banner-img">
-    	<h1>this is a pic.</h1>
-    	<img class="vertical-align-style" src="images/banner_03.jpg" alt="b03">
-    </li>
-</ul>
-	</div> -->
 	<div class="head-zone">
 		<div class="slideshow">
 	<div class="slide-img  slide-right">
@@ -113,88 +109,6 @@
 
 	<!-- 前端作品 -->
 	<div class="main  gridStyle">
-		<!-- 假資料產生範例 -->
-<!-- <h2>modi et voluptatum aut similique possimus</h2>
-<p><img src="http://placehold.it/640x360" /></p>
-<p>Adipisci dicta nam mollitia soluta similique enim omnis veritatis qui enim est. blanditiis distinctio dolorem earum asperiores vel distinctio dolor nobis et sint voluptas voluptatibus. quo ex aut occaecati facere. et quia a culpa. aperiam eum sint molestiae cum expedita labore enim occaecati labore. inventore quisquam quaerat aut maxime sint eaque eum id. autem in fugit illo accusamus pariatur quaerat alias eos qui perspiciatis omnis quos vero molestias</p> -->
-
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-<!-- <div class="product-Msize">
-<a href="#">
-	<div class="product-style">
-		<img class="product-img" src="images/title_img.png" alt="pr-img">
-		<h2 class="product-title">Lorem ipsum dolor sit amet,</h2>
-		<span class="product-tag">Ajax</span>
-		<span class="product-tag">Css</span>
-		<span class="product-tag">JQ</span>
-		<span class="product-tag">Node</span>
-		<span class="product-tag">Angular</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam voluptatum aliquam nostrum, ipsa mollitia hic ea corporis quas esse illo recusandae perferendis magni distinctio vel dignissimos itaque dolores laboriosam.</p>
-	</div>
-</a>
-</div><!-- product-link -->
-<!-- <!-- 乘以5次 -->
-
 <div class="product-Msize">
 <a href="http://www.dpp.org.tw/928picnic/" alt="民進黨創黨28th">
 	<div class="product-style">
@@ -252,9 +166,27 @@
 	<!-- 關於我 -->
 	<div class="aboutMe  gridStyle">
 		<div class="aboutMe-range">
-	<div class="ab-myphoto"><img src="images/Kuma2.png" alt="myphoto"></div>
+	<h1 class="ab-title">About Me</h1>
+	<div class="ab-myphoto">
+    	<div class="icon-radius">
+			<svg class="icon vertical-align-style">
+    			<use xlink:href="#icon-display"></use>
+    		</svg>
+		</div>
+		<div class="icon-radius">
+			<svg class="icon vertical-align-style">
+    			<use xlink:href="#icon-tablet"></use>
+    		</svg>
+		</div>
+    	<div class="icon-radius">
+			<svg class="icon vertical-align-style">
+    			<use xlink:href="#icon-mobile2"></use>
+    		</svg>
+		</div>
+		<!-- 大頭<img src="images/Kuma2.png" alt="myphoto"> -->
+	</div>
 	<div class="ab-txt">
-		<h1 class="ab-title">About Me</h1>
+		<!-- <h2 class="ab-title">About Me</h2> -->
 		<p>本身為多媒體設計師，接觸前端領域之後，便開始專注於各種前端技術學習，主要技術為html、Css(RWD)、JQ，目前也接洽網頁設計相關的專案，並且應用一些framework在專案執行上，例如：bootstrap、susy2...或是視覺圖表化的c3.js、chart.js</br><strong class="strong-t">網站目前持續更新中</strong></p>
 		<p>個人技術學習紀錄網誌觀看相關訊息<a class="a-link" href="http://www.kumakobo.com/" alt="庫馬亂扣汀">庫馬亂扣汀</a></p>
 		<p>多媒體設計相關作品<a class="a-link" href="http://www.kumakobo.com/kumawu/" alt="庫馬亂扣汀">Kuma Kobo</a></p>
@@ -395,6 +327,35 @@
 	</div>
 </a>
 </div><!-- product-link -->
+	</div>
+	<!-- 聯絡方式 -->
+	<div class="contactMe  gridStyle">
+		<div class="contactMe-range">
+	<h1>Contact</h1>
+	<div class="conta-form">
+		<div class="form-type">
+			<input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Full Name" name="name">
+		</div>
+		<div class="form-type">
+			<input type="email" data-validation-type="email" id="form-email" placeholder="Email Address" name="email">
+		</div>
+		<div class="form-type">
+			<textarea placeholder="Message..." name="message" id="message"></textarea>
+		</div>
+		<div class="form-type">
+			<button type="submit" id="email_submit">Submit</button>
+		</div>
+    </div>
+    <div class="conta-adress">
+    	<img src="images/Kuma2.png" class="myphoto" alt="myphoto">
+    	<h2>Kuma Wu</h2>
+    	<p>
+    	<svg class="icon">
+    		<use xlink:href="#icon-envelop"></use>
+    	</svg>
+    	Mail :<a href="mailto:w87502047@gmail.com">w87502047@gmail.com</a></p>
+    </div>
+</div>
 	</div>
 	<!-- 頁尾資訊 -->
 	<footer class="foot-page  gridStyle">

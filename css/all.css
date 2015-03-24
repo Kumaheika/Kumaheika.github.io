@@ -1,5 +1,5 @@
-@charset "UTF-8";
-/* line 5, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
+@import url(http://fonts.googleapis.com/css?family=Exo);
+/* line 17, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,46 +21,46 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
+/* line 22, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
+/* line 24, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
+/* line 26, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
+/* line 28, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
+/* line 30, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
+/* line 103, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
+/* line 32, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:\Users\kuma\Desktop\fire.app.windows.v1.13.1\fire.app\lib\ruby\compass_1.0\compass-core-1.0.0\stylesheets\compass\reset\_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+/* line 116, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
@@ -348,7 +348,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
   See: http://jacklmoore.com/notes/ie-transparency-problems/
 */
-/* line 61, ../sass/_colorbox.scss */
+/* line 68, ../sass/_colorbox.scss */
 .cboxIE #cboxTopLeft,
 .cboxIE #cboxTopCenter,
 .cboxIE #cboxTopRight,
@@ -360,107 +360,148 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
 
-/* line 20, ../sass/all.sass */
+/* line 1, ../sass/_svg.sass */
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+/* line 5, ../sass/_svg.sass */
+.icon-keyboard {
+  width: 1.125em;
+}
+
+/* line 7, ../sass/_svg.sass */
+.icon-youtube4 {
+  width: 2.50879em;
+}
+
+/* line 9, ../sass/_svg.sass */
+.icon-radius {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 0 1em 1em 0;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 18, ../sass/_svg.sass */
+.icon-radius:hover {
+  background: khaki;
+  border: none;
+}
+/* line 21, ../sass/_svg.sass */
+.icon-radius:hover .icon {
+  color: #38a4ab;
+}
+/* line 23, ../sass/_svg.sass */
+.icon-radius .icon {
+  position: absolute;
+  display: block;
+  width: 4em;
+  height: 4em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+}
+
+/* line 23, ../sass/all.sass */
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-/* line 23, ../sass/all.sass */
+/* line 26, ../sass/all.sass */
 body {
   padding-top: 60px;
   font-family: helvetica, "微軟正黑體";
   background-image: url("../images/bg.png");
 }
 
-/* line 27, ../sass/all.sass */
+/* line 30, ../sass/all.sass */
 a {
-  color: #fff;
+  color: white;
 }
-/* line 29, ../sass/all.sass */
+/* line 32, ../sass/all.sass */
 a:hover {
-  color: Khaki;
-}
-
-/* line 31, ../sass/all.sass */
-p {
-  color: #444;
-  line-height: 1.5em;
+  color: khaki;
 }
 
 /* line 34, ../sass/all.sass */
-.box-1 {
-  position: relative;
-  overflow: hidden;
-  width: 400px;
-  height: 200px;
-  border: 1px dashed #900;
+p {
+  color: #444444;
+  line-height: 1.5em;
+}
+
+/* line 37, ../sass/all.sass */
+h1 {
+  font-family: "Exo", helvetica, "微軟正黑體";
+  margin-bottom: 0.5em;
+  padding: 1em;
+  color: white;
+  font-size: 40pt;
+  font-weight: 700;
   text-align: center;
-  margin: 5px;
-  float: left;
 }
 
-/* line 43, ../sass/all.sass */
-.ajax_loader {
-  background: url("spinner_squares_circle.gif") no-repeat center center transparent;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 47, ../sass/all.sass */
-.blue-loader .ajax_loader {
-  background: url("ajax-loader_blue.gif") no-repeat center center transparent;
-}
-
-/* line 52, ../sass/all.sass */
-.clearBoth:before, .nav-stly:before, .banner:before, .head-zone:before, .main:before, .aboutMe:before, .linkpage:before, .foot-page:before, .aboutMe-range:before, .clearBoth:after, .nav-stly:after, .banner:after, .head-zone:after, .main:after, .aboutMe:after, .linkpage:after, .foot-page:after, .aboutMe-range:after {
+/* line 48, ../sass/all.sass */
+.clearBoth:before, .nav-stly:before, .banner:before, .head-zone:before, .main:before, .aboutMe:before, .linkpage:before, .contactMe:before, .foot-page:before, .aboutMe-range:before, .contactMe-range::after:before, .clearBoth:after, .nav-stly:after, .banner:after, .head-zone:after, .main:after, .aboutMe:after, .linkpage:after, .contactMe:after, .foot-page:after, .aboutMe-range:after, .contactMe-range::after:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-/* line 57, ../sass/all.sass */
+/* line 53, ../sass/all.sass */
 .vertical-align-style, .banner-style .unslider-arrow {
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-/* line 62, ../sass/all.sass */
+/* line 58, ../sass/all.sass */
 .margin-b, .banner, .head-zone, .main, .aboutMe, .linkpage {
   margin-bottom: 10vh;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 65, ../sass/all.sass */
+  /* line 61, ../sass/all.sass */
   .margin-b, .banner, .head-zone, .main, .aboutMe, .linkpage {
     margin-bottom: 3em;
   }
 }
-/* line 83, ../sass/all.sass */
+/* line 79, ../sass/all.sass */
 .gridStyle {
   width: 100%;
   padding: 0 10%;
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 87, ../sass/all.sass */
+  /* line 83, ../sass/all.sass */
   .gridStyle {
     padding: 0 5%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 90, ../sass/all.sass */
+  /* line 86, ../sass/all.sass */
   .gridStyle {
     padding: 0 2%;
   }
 }
-/* line 92, ../sass/all.sass */
+/* line 88, ../sass/all.sass */
 .nav-stly {
   position: absolute;
   top: 0;
@@ -472,7 +513,7 @@ p {
   overflow: hidden;
 }
 
-/* line 103, ../sass/all.sass */
+/* line 99, ../sass/all.sass */
 .nav-stly-fixed {
   position: fixed;
   top: 0px;
@@ -480,75 +521,91 @@ p {
   z-index: 999;
 }
 
-/* line 108, ../sass/all.sass */
+/* line 104, ../sass/all.sass */
 .banner {
   position: relative;
   max-width: 100%;
   max-height: 380px;
 }
 
-/* line 114, ../sass/all.sass */
+/* line 110, ../sass/all.sass */
 .head-zone {
   position: relative;
   width: 100%;
   height: 465px;
   overflow: hidden;
-  background: #000;
+  background: black;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 126, ../sass/all.sass */
+  /* line 122, ../sass/all.sass */
   .head-zone {
     height: 400px;
   }
 }
-/* line 128, ../sass/all.sass */
+/* line 124, ../sass/all.sass */
 .main {
   position: relative;
 }
 
-/* line 132, ../sass/all.sass */
+/* line 128, ../sass/all.sass */
 .aboutMe {
   background: #38a4ab;
+  background: url("../images/contact_bg.png") #232d3c top center;
+  background-attachment: fixed;
 }
 
-/* line 136, ../sass/all.sass */
+/* line 134, ../sass/all.sass */
 .linkpage {
   padding-top: 2em;
   padding-bottom: 2em;
-  background: #fff;
+  background: white;
 }
 
-/* line 142, ../sass/all.sass */
+/* line 140, ../sass/all.sass */
+.contactMe {
+  padding-bottom: 3em;
+  background: url("../images/contact_bg.png") #232d3c top center;
+  background-attachment: fixed;
+}
+
+/* line 145, ../sass/all.sass */
 .foot-page {
   height: 40px;
   background: #242d3c;
 }
 
-/* line 148, ../sass/all.sass */
+/* line 151, ../sass/all.sass */
 .strong-t {
   padding: 0;
-  color: Khaki;
+  color: khaki;
   font-size: 1.3em;
   font-weight: 700;
   line-height: 2em;
 }
 
-/* line 154, ../sass/all.sass */
+/* line 157, ../sass/all.sass */
 .a-link {
   margin: 0 0.3em;
   padding: 0.3em;
-  color: Khaki;
-  border: 1px solid Khaki;
+  color: khaki;
+  border: 1px solid khaki;
   border-radius: 10px;
 }
-/* line 160, ../sass/all.sass */
+/* line 163, ../sass/all.sass */
 .a-link:hover {
   color: #38a4ab;
-  background: Khaki;
+  background: khaki;
 }
 
-/* line 164, ../sass/all.sass */
+@media only screen and (max-width: 480px) {
+  /* line 167, ../sass/all.sass */
+  .a-link {
+    display: block;
+    margin-top: 0.5em;
+  }
+}
+/* line 171, ../sass/all.sass */
 .top {
   display: block;
   cursor: pointer;
@@ -562,18 +619,20 @@ p {
   background: black;
   opacity: 0.6;
   overflow: hidden;
-  -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 178, ../sass/all.sass */
+/* line 185, ../sass/all.sass */
 .top:hover {
   opacity: 1;
 }
-/* line 180, ../sass/all.sass */
+/* line 187, ../sass/all.sass */
 .top::after {
   content: "^";
-  color: #fff;
+  color: white;
   font-size: 50pt;
   font-weight: 700;
   line-height: 100px;
@@ -581,32 +640,32 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 188, ../sass/all.sass */
+  /* line 195, ../sass/all.sass */
   .top {
     bottom: 5%;
     width: 40px;
     height: 40px;
   }
-  /* line 192, ../sass/all.sass */
+  /* line 199, ../sass/all.sass */
   .top::after {
     content: "TOP";
     font-size: 12pt;
     line-height: 40px;
   }
 }
-/* line 196, ../sass/all.sass */
+/* line 203, ../sass/all.sass */
 .nav-icon {
   cursor: pointer;
   height: auto;
   float: right;
   position: relative;
   display: none;
-  color: #fff;
+  color: white;
   font-size: 22pt;
   line-height: 60px;
 }
 
-/* line 205, ../sass/all.sass */
+/* line 212, ../sass/all.sass */
 .logo {
   position: relative;
   float: left;
@@ -617,98 +676,98 @@ p {
   text-transform: uppercase;
 }
 
-/* line 213, ../sass/all.sass */
+/* line 220, ../sass/all.sass */
 ul.navbar {
   display: block;
   float: right;
 }
-/* line 216, ../sass/all.sass */
+/* line 223, ../sass/all.sass */
 ul.navbar li {
   float: left;
   font-size: 14pt;
 }
-/* line 219, ../sass/all.sass */
+/* line 226, ../sass/all.sass */
 ul.navbar li a {
   display: block;
   padding: 0 1em;
   line-height: 60px;
 }
-/* line 223, ../sass/all.sass */
+/* line 230, ../sass/all.sass */
 ul.navbar li a:hover {
-  color: SaddleBrown;
-  background-color: Khaki;
+  color: saddlebrown;
+  background-color: khaki;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 227, ../sass/all.sass */
+  /* line 234, ../sass/all.sass */
   .nav-icon {
     display: block;
   }
 
-  /* line 229, ../sass/all.sass */
+  /* line 236, ../sass/all.sass */
   ul.navbar {
     display: none;
     width: 100%;
     background: #38a4ab;
     z-index: 9999999;
   }
-  /* line 234, ../sass/all.sass */
+  /* line 241, ../sass/all.sass */
   ul.navbar li {
     width: 100%;
   }
 }
-/* line 236, ../sass/all.sass */
+/* line 243, ../sass/all.sass */
 .nav-icon-show {
   display: block !important;
 }
 
-/* line 239, ../sass/all.sass */
+/* line 246, ../sass/all.sass */
 .slideshow {
   position: relative;
   width: 100%;
 }
-/* line 242, ../sass/all.sass */
+/* line 249, ../sass/all.sass */
 .slideshow .slide-left {
   left: 0%;
 }
-/* line 244, ../sass/all.sass */
+/* line 251, ../sass/all.sass */
 .slideshow .slide-right {
   right: 0%;
 }
-/* line 246, ../sass/all.sass */
+/* line 253, ../sass/all.sass */
 .slideshow .slide-img {
   display: none;
   position: absolute;
   height: 465px;
   overflow: hidden;
 }
-/* line 251, ../sass/all.sass */
+/* line 258, ../sass/all.sass */
 .slideshow .slide-img h1 {
   z-index: 10;
   position: absolute;
   top: 10%;
   left: 50%;
   padding: 0.5em;
-  color: #fff;
+  color: white;
   font-size: 40pt;
   font-weight: 700;
   text-transform: uppercase;
   opacity: 0.8;
 }
-/* line 262, ../sass/all.sass */
+/* line 269, ../sass/all.sass */
 .slideshow .slide-img h1:hover {
   opacity: 1;
 }
-/* line 264, ../sass/all.sass */
+/* line 271, ../sass/all.sass */
 .slideshow .slide-img .left-h1 {
   margin-left: -42%;
 }
-/* line 266, ../sass/all.sass */
+/* line 273, ../sass/all.sass */
 .slideshow .slide-img .right-h1 {
   margin-left: 22%;
 }
 
-/* line 268, ../sass/all.sass */
+/* line 275, ../sass/all.sass */
 .slideshow-mobile {
   display: none;
   width: 480px;
@@ -718,17 +777,17 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 275, ../sass/all.sass */
+  /* line 282, ../sass/all.sass */
   .slideshow {
     display: none;
   }
 
-  /* line 277, ../sass/all.sass */
+  /* line 284, ../sass/all.sass */
   .slideshow-mobile {
     display: block;
   }
 }
-/* line 282, ../sass/all.sass */
+/* line 289, ../sass/all.sass */
 .banner-style .unslider-arrow {
   z-index: 999;
   position: absolute;
@@ -736,19 +795,21 @@ ul.navbar li a:hover {
   height: 120px;
   background: #38a4ab;
   opacity: 0.3;
-  -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
+  -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 292, ../sass/all.sass */
+/* line 299, ../sass/all.sass */
 .banner-style .unslider-arrow:hover {
   opacity: 0.8;
 }
-/* line 294, ../sass/all.sass */
+/* line 301, ../sass/all.sass */
 .banner-style .prev,
 .banner-style .next {
   font-size: 100pt;
@@ -756,50 +817,50 @@ ul.navbar li a:hover {
   line-height: 125px;
   text-align: center;
 }
-/* line 300, ../sass/all.sass */
+/* line 307, ../sass/all.sass */
 .banner-style .prev {
   left: 1%;
 }
-/* line 302, ../sass/all.sass */
+/* line 309, ../sass/all.sass */
 .banner-style .next {
   right: 1%;
 }
-/* line 304, ../sass/all.sass */
+/* line 311, ../sass/all.sass */
 .banner-style .banner-img {
   position: relative;
   float: left;
-  background: SteelBlue;
+  background: steelblue;
 }
-/* line 308, ../sass/all.sass */
+/* line 315, ../sass/all.sass */
 .banner-style h1 {
   z-index: 10;
   position: absolute;
   top: 10%;
   left: 10%;
   padding: 0.5em;
-  color: #fff;
+  color: white;
   font-size: 40pt;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   opacity: 0.8;
 }
-/* line 320, ../sass/all.sass */
+/* line 327, ../sass/all.sass */
 .banner-style h1:hover {
   opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 324, ../sass/all.sass */
+  /* line 331, ../sass/all.sass */
   .banner-style .unslider-arrow {
     display: none;
   }
-  /* line 326, ../sass/all.sass */
+  /* line 333, ../sass/all.sass */
   .banner-style .banner-img {
     height: 90vh;
   }
 }
-/* line 329, ../sass/all.sass */
+/* line 336, ../sass/all.sass */
 .product-Msize, .linkpage-size {
   float: left;
   width: 25%;
@@ -807,53 +868,55 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 334, ../sass/all.sass */
+  /* line 341, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 33.33%;
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 337, ../sass/all.sass */
+  /* line 344, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 50%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 340, ../sass/all.sass */
+  /* line 347, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 100%;
   }
 }
-/* line 342, ../sass/all.sass */
+/* line 349, ../sass/all.sass */
 .product-style {
   height: 450px;
   border: 1px solid #dddddd;
   background: #fafafa;
   overflow: hidden;
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 349, ../sass/all.sass */
+/* line 356, ../sass/all.sass */
 .product-style:hover {
   background: #ddeeee;
 }
-/* line 351, ../sass/all.sass */
+/* line 358, ../sass/all.sass */
 .product-style .product-img {
   width: 100%;
   height: auto;
-  background: SlateGray;
+  background: slategrey;
   overflow: hidden;
 }
-/* line 356, ../sass/all.sass */
+/* line 363, ../sass/all.sass */
 .product-style .product-img img {
   width: 100%;
 }
-/* line 358, ../sass/all.sass */
+/* line 365, ../sass/all.sass */
 .product-style .product-article {
   padding: 0 1em 1em 1em;
 }
-/* line 360, ../sass/all.sass */
+/* line 367, ../sass/all.sass */
 .product-style .product-title {
   padding: 1em 0;
   font-size: 1.2em;
@@ -862,100 +925,207 @@ ul.navbar li a:hover {
   text-align: center;
   color: #38a4ab;
 }
-/* line 367, ../sass/all.sass */
+/* line 374, ../sass/all.sass */
 .product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
   padding: 5px;
   background: #38a4ab;
 }
-/* line 372, ../sass/all.sass */
+/* line 379, ../sass/all.sass */
 .product-style p {
   font-size: 12pt;
   letter-spacing: 0.05em;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 376, ../sass/all.sass */
+  /* line 383, ../sass/all.sass */
   .product-style {
     height: auto;
   }
 }
-/* line 379, ../sass/all.sass */
+/* line 386, ../sass/all.sass */
 .aboutMe-range {
   width: 100%;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 384, ../sass/all.sass */
+/* line 391, ../sass/all.sass */
 .aboutMe-range .ab-myphoto {
   float: left;
-  width: 30%;
+  width: 40%;
   padding: 2em;
   text-align: center;
 }
-/* line 389, ../sass/all.sass */
+/* line 396, ../sass/all.sass */
 .aboutMe-range .ab-myphoto img {
   max-width: 200px;
   height: auto;
 }
-/* line 392, ../sass/all.sass */
+/* line 399, ../sass/all.sass */
 .aboutMe-range .ab-txt {
   float: right;
-  width: 70%;
+  width: 60%;
   padding: 2em;
   text-align: left;
 }
-/* line 397, ../sass/all.sass */
+/* line 404, ../sass/all.sass */
 .aboutMe-range .ab-txt p {
   margin-bottom: 1em;
-  color: #fff;
+  color: white;
   font-size: 14pt;
   letter-spacing: 0.05em;
 }
-/* line 402, ../sass/all.sass */
+/* line 409, ../sass/all.sass */
 .aboutMe-range .ab-title {
-  color: #fff;
+  color: white;
   font-size: 32pt;
   margin-bottom: 0.5em;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 407, ../sass/all.sass */
+  /* line 414, ../sass/all.sass */
   .aboutMe-range {
     padding: 0;
   }
-  /* line 409, ../sass/all.sass */
+  /* line 416, ../sass/all.sass */
   .aboutMe-range .ab-myphoto {
     float: none;
     width: 100%;
     padding: 1em;
+    margin-bottom: 1em;
   }
-  /* line 413, ../sass/all.sass */
+  /* line 421, ../sass/all.sass */
   .aboutMe-range .ab-txt {
     float: none;
     width: 100%;
     padding: 0 1em 1em;
     text-align: center;
   }
+  /* line 426, ../sass/all.sass */
+  .aboutMe-range .icon-radius {
+    width: 30%;
+    max-height: 3em;
+    margin: 1%;
+  }
 }
 @media only screen and (max-width: 480px) {
-  /* line 419, ../sass/all.sass */
+  /* line 431, ../sass/all.sass */
   .ab-txt .a-link {
     display: block;
     margin-top: 0.5em;
   }
 }
-/* line 425, ../sass/all.sass */
+/* line 437, ../sass/all.sass */
 .linkpage-size .product-tag {
-  background-color: SteelBlue;
+  background-color: steelblue;
 }
 
-/* line 429, ../sass/all.sass */
+/* line 440, ../sass/all.sass */
+.contactMe-range {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em;
+}
+/* line 446, ../sass/all.sass */
+.contactMe-range .conta-form, .contactMe-range .conta-adress {
+  float: right;
+  width: 55%;
+  padding: 1em;
+}
+/* line 451, ../sass/all.sass */
+.contactMe-range .form-type {
+  width: 100%;
+  margin-bottom: 2em;
+}
+/* line 456, ../sass/all.sass */
+.contactMe-range .form-type input, .contactMe-range .form-type textarea, .contactMe-range .form-type button {
+  width: 100%;
+  padding: 0.5em;
+  color: white;
+  font-family: helvetica, "微軟正黑體";
+  font-size: 20pt;
+  letter-spacing: 0.03em;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 466, ../sass/all.sass */
+.contactMe-range .form-type input:focus, .contactMe-range .form-type textarea:focus, .contactMe-range .form-type button:focus {
+  color: #444444;
+  background: white;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 470, ../sass/all.sass */
+.contactMe-range .form-type button {
+  cursor: pointer;
+}
+/* line 472, ../sass/all.sass */
+.contactMe-range .form-type button:hover {
+  color: #38a4ab;
+  background: khaki;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 476, ../sass/all.sass */
+.contactMe-range .conta-adress {
+  width: 40%;
+  padding: 1em;
+  text-align: center;
+  font-family: helvetica, "微軟正黑體";
+}
+/* line 481, ../sass/all.sass */
+.contactMe-range .conta-adress h2 {
+  color: white;
+  font-size: 2em;
+  padding: 0.5em;
+}
+/* line 485, ../sass/all.sass */
+.contactMe-range .conta-adress a {
+  padding: 0 0.5em;
+}
+/* line 487, ../sass/all.sass */
+.contactMe-range .conta-adress p {
+  padding: 0.5em;
+  color: white;
+}
+/* line 490, ../sass/all.sass */
+.contactMe-range .conta-adress .myphoto {
+  max-width: 200px;
+  height: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 495, ../sass/all.sass */
+  .contactMe-range {
+    padding: 0;
+  }
+  /* line 497, ../sass/all.sass */
+  .contactMe-range .conta-form, .contactMe-range .conta-adress {
+    float: none;
+    width: 100%;
+    padding: 1em;
+  }
+  /* line 502, ../sass/all.sass */
+  .contactMe-range .conta-adress .myphoto {
+    max-width: 200px;
+    height: auto;
+  }
+}
+/* line 506, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 431, ../sass/all.sass */
+/* line 508, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;
