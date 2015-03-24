@@ -416,8 +416,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 @media only screen and (max-width: 768px) {
   /* line 33, ../sass/_svg.sass */
   .icon-radius {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   /* line 36, ../sass/_svg.sass */
   .icon-radius .icon {
