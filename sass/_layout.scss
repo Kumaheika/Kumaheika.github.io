@@ -1,0 +1,197 @@
+.clearfix {
+  &:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+.container {
+  max-width: $bigger_screen;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: $container_padding;
+  padding-right: $container_padding;
+  @include pad_under {
+    width: 85%;
+  };
+  @include desktop_under {
+    width: 75%;
+  };
+  @extend .clearfix;
+  .section {
+    width: 100%;
+    padding-bottom: $section_padding;
+  }
+  .row {
+    margin-left: -$container_padding;
+    margin-right: -$container_padding;
+    margin-bottom: $content_mb;
+  }
+  .col {
+    float: left;
+    padding-left: $container_padding;
+    padding-right: $container_padding;
+    &.s1 {
+      width: 8.3333333333%;
+    }
+    &.s2 {
+      width: 16.6666666666%;
+    }
+    &.s3 {
+      width: 25%;
+    }
+    &.s4 {
+      width: 33.3333333333%;
+    }
+    &.s5 {
+      width: 41.6666666667%;
+    }
+    &.s6 {
+      width: 50%;
+    }
+    &.s7 {
+      width: 58.3333333333%;
+    }
+    &.s8 {
+      width: 66.6666666667%;
+    }
+    &.s9 {
+      width: 75%;
+    }
+    &.s10 {
+      width: 83.3333333333%;
+    }
+    &.s11 {
+      width: 91.6666666667%;
+    }
+    &.s12 {
+      width: 100%;
+    }
+    &.m1, &.m2, &.m3, &.m4, &.m5, &.m6, &.m7, &.m8, &.m9, &.m10, &.m11, &.m12 {
+      width: 100%;
+    }
+    &.m1 {
+      @include pad_under {
+        width: 8.3333333333%;
+      }
+    }
+    &.m2 {
+      @include pad_under {
+        width: 16.6666666666%;
+      }
+    }
+    &.m3 {
+      @include pad_under {
+        width: 25%;
+      }
+    }
+    &.m4 {
+      @include pad_under {
+        width: 33.3333333333%;
+      }
+    }
+    &.m5 {
+      @include pad_under {
+        width: 41.6666666667%;
+      }
+    }
+    &.m6 {
+      @include pad_under {
+        width: 50%;
+      }
+    }
+    &.m7 {
+      @include pad_under {
+        width: 58.3333333333%;
+      }
+    }
+    &.m8 {
+      @include pad_under {
+        width: 66.6666666667%;
+      }
+    }
+    &.m9 {
+      @include pad_under {
+        width: 75%;
+      }
+    }
+    &.m10 {
+      @include pad_under {
+        width: 83.3333333333%;
+      }
+    }
+    &.m11 {
+      @include pad_under {
+        width: 91.6666666667%;
+      }
+    }
+    &.m12 {
+      @include pad_under {
+        width: 100%;
+      }
+    }
+    &.l1, &.l2, &.l3, &.l4, &.l5, &.l6, &.l7, &.l8, &.l9, &.l10, &.l11, &.l12 {
+      width: 100%;
+    }
+    &.l1 {
+      @include desktop_under {
+        width: 8.3333333333%;
+      }
+    }
+    &.l2 {
+      @include desktop_under {
+        width: 16.6666666666%;
+      }
+    }
+    &.l3 {
+      @include desktop_under {
+        width: 25%;
+      }
+    }
+    &.l4 {
+      @include desktop_under {
+        width: 33.3333333333%;
+      }
+    }
+    &.l5 {
+      @include desktop_under {
+        width: 41.6666666667%;
+      }
+    }
+    &.l6 {
+      @include desktop_under {
+        width: 50%;
+      }
+    }
+    &.l7 {
+      @include desktop_under {
+        width: 58.3333333333%;
+      }
+    }
+    &.l8 {
+      @include desktop_under {
+        width: 66.6666666667%;
+      }
+    }
+    &.l9 {
+      @include desktop_under {
+        width: 75%;
+      }
+    }
+    &.l10 {
+      @include desktop_under {
+        width: 83.3333333333%;
+      }
+    }
+    &.l11 {
+      @include desktop_under {
+        width: 91.6666666667%;
+      }
+    }
+    &.l12 {
+      @include desktop_under {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// S-手機尺寸600以下  Ｍ-平板601～桌機992  L-桌機993以上
+@mixin pad_under{
+  @media screen and (min-width: $pad_screen) {
+    @content;
+  }
+}
+
+@mixin desktop_under {
+  @media screen and (min-width: $desktop_screen) {
+    @content;
+  }
+}
+
+@mixin bigger_under {
+  @media screen and (min-width: $bigger_screen) {
+    @content;
+  }
+}

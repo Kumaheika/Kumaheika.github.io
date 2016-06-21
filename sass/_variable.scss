@@ -1,0 +1,26 @@
+//breakpoint
+$pad_screen: 601px;
+$desktop_screen: 993px;
+$bigger_screen: 1280px;
+
+//web style
+$web_font_family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', "Helvetica", "Arial", sans-serif;
+$web_font_size: 16px;
+$web_linehight: 1.5em;
+
+//container、col 左右 padding (有 row 會抵消)
+$container_padding: 15px;
+//row的margin-bottom
+$content_mb: 20px;
+//section 上下 padding 距離
+$section_padding: 1rem;
+
+//主要顏色
+$color_01: #abcdef;
+$color_02: #abcdef;
+$color_03: #abcdef;
+
+//文字主要顏色
+$font_color_01: #444;
+$font_color_02: #000;
+$font_color_03: #888;

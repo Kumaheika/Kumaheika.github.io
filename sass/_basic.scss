@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: $web_font_size;
+}
+body {
+  color: $font_color_01;
+  font-family: $web_font_family;
+  line-height: $web_linehight;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: $web_linehight;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+
+//Title 效果
+.block_title {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: $web_linehight;
+  color: $font_color_01;
+}
+
+//文字對齊
+.left-align {
+  text-align: left;
+}
+.center-align {
+  text-align: center;
+}
+.right-align {
+  text-align: right;
+}
+
+//滑入效果
+.hovereffect {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  @include transition (box-shadow .25s);
+  &:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    @include transition (box-shadow .25s);
+  }
+}
