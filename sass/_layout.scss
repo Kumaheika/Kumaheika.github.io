@@ -11,6 +11,7 @@
   margin: 0 auto;
   padding-left: $container_padding;
   padding-right: $container_padding;
+  @extend .clearfix;
   @include pad_under {
     width: 85%;
   };
@@ -23,9 +24,11 @@
     padding-bottom: $section_padding;
   }
   .row {
+    width: 100%;
     margin-left: -$container_padding;
     margin-right: -$container_padding;
-    margin-bottom: $content_mb;
+    padding-bottom: $content_mb;
+    @extend .clearfix;
   }
   .col {
     float: left;

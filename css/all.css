@@ -1,5 +1,5 @@
 /* line 2, ../sass/_layout.scss */
-.clearfix:after, .container:after {
+.clearfix:after, .container:after, .container .row:after {
   content: ' ';
   display: table;
   clear: both;
@@ -13,7 +13,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
   /* line 8, ../sass/_layout.scss */
   .container {
     width: 85%;
@@ -25,219 +25,220 @@
     width: 75%;
   }
 }
-/* line 21, ../sass/_layout.scss */
+/* line 22, ../sass/_layout.scss */
 .container .section {
   width: 100%;
   padding-bottom: 1rem;
 }
-/* line 25, ../sass/_layout.scss */
+/* line 26, ../sass/_layout.scss */
 .container .row {
+  width: 100%;
   margin-left: -15px;
   margin-right: -15px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
-/* line 30, ../sass/_layout.scss */
+/* line 33, ../sass/_layout.scss */
 .container .col {
   float: left;
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 34, ../sass/_layout.scss */
+/* line 37, ../sass/_layout.scss */
 .container .col.s1 {
   width: 8.3333333333%;
 }
-/* line 37, ../sass/_layout.scss */
+/* line 40, ../sass/_layout.scss */
 .container .col.s2 {
   width: 16.6666666666%;
 }
-/* line 40, ../sass/_layout.scss */
+/* line 43, ../sass/_layout.scss */
 .container .col.s3 {
   width: 25%;
 }
-/* line 43, ../sass/_layout.scss */
+/* line 46, ../sass/_layout.scss */
 .container .col.s4 {
   width: 33.3333333333%;
 }
-/* line 46, ../sass/_layout.scss */
+/* line 49, ../sass/_layout.scss */
 .container .col.s5 {
   width: 41.6666666667%;
 }
-/* line 49, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 .container .col.s6 {
   width: 50%;
 }
-/* line 52, ../sass/_layout.scss */
+/* line 55, ../sass/_layout.scss */
 .container .col.s7 {
   width: 58.3333333333%;
 }
-/* line 55, ../sass/_layout.scss */
+/* line 58, ../sass/_layout.scss */
 .container .col.s8 {
   width: 66.6666666667%;
 }
-/* line 58, ../sass/_layout.scss */
+/* line 61, ../sass/_layout.scss */
 .container .col.s9 {
   width: 75%;
 }
-/* line 61, ../sass/_layout.scss */
+/* line 64, ../sass/_layout.scss */
 .container .col.s10 {
   width: 83.3333333333%;
 }
-/* line 64, ../sass/_layout.scss */
+/* line 67, ../sass/_layout.scss */
 .container .col.s11 {
   width: 91.6666666667%;
 }
-/* line 67, ../sass/_layout.scss */
+/* line 70, ../sass/_layout.scss */
 .container .col.s12 {
   width: 100%;
 }
-/* line 70, ../sass/_layout.scss */
+/* line 73, ../sass/_layout.scss */
 .container .col.m1, .container .col.m2, .container .col.m3, .container .col.m4, .container .col.m5, .container .col.m6, .container .col.m7, .container .col.m8, .container .col.m9, .container .col.m10, .container .col.m11, .container .col.m12 {
   width: 100%;
 }
-@media screen and (min-width: 601px) {
-  /* line 73, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 76, ../sass/_layout.scss */
   .container .col.m1 {
     width: 8.3333333333%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 78, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 81, ../sass/_layout.scss */
   .container .col.m2 {
     width: 16.6666666666%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 83, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 86, ../sass/_layout.scss */
   .container .col.m3 {
     width: 25%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 88, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 91, ../sass/_layout.scss */
   .container .col.m4 {
     width: 33.3333333333%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 93, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 96, ../sass/_layout.scss */
   .container .col.m5 {
     width: 41.6666666667%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 98, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 101, ../sass/_layout.scss */
   .container .col.m6 {
     width: 50%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 103, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 106, ../sass/_layout.scss */
   .container .col.m7 {
     width: 58.3333333333%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 108, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 111, ../sass/_layout.scss */
   .container .col.m8 {
     width: 66.6666666667%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 113, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 116, ../sass/_layout.scss */
   .container .col.m9 {
     width: 75%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 118, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 121, ../sass/_layout.scss */
   .container .col.m10 {
     width: 83.3333333333%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 123, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 126, ../sass/_layout.scss */
   .container .col.m11 {
     width: 91.6666666667%;
   }
 }
-@media screen and (min-width: 601px) {
-  /* line 128, ../sass/_layout.scss */
+@media screen and (min-width: 768px) {
+  /* line 131, ../sass/_layout.scss */
   .container .col.m12 {
     width: 100%;
   }
 }
-/* line 133, ../sass/_layout.scss */
+/* line 136, ../sass/_layout.scss */
 .container .col.l1, .container .col.l2, .container .col.l3, .container .col.l4, .container .col.l5, .container .col.l6, .container .col.l7, .container .col.l8, .container .col.l9, .container .col.l10, .container .col.l11, .container .col.l12 {
   width: 100%;
 }
 @media screen and (min-width: 993px) {
-  /* line 136, ../sass/_layout.scss */
+  /* line 139, ../sass/_layout.scss */
   .container .col.l1 {
     width: 8.3333333333%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 141, ../sass/_layout.scss */
+  /* line 144, ../sass/_layout.scss */
   .container .col.l2 {
     width: 16.6666666666%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 146, ../sass/_layout.scss */
+  /* line 149, ../sass/_layout.scss */
   .container .col.l3 {
     width: 25%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 151, ../sass/_layout.scss */
+  /* line 154, ../sass/_layout.scss */
   .container .col.l4 {
     width: 33.3333333333%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 156, ../sass/_layout.scss */
+  /* line 159, ../sass/_layout.scss */
   .container .col.l5 {
     width: 41.6666666667%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 161, ../sass/_layout.scss */
+  /* line 164, ../sass/_layout.scss */
   .container .col.l6 {
     width: 50%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 166, ../sass/_layout.scss */
+  /* line 169, ../sass/_layout.scss */
   .container .col.l7 {
     width: 58.3333333333%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 171, ../sass/_layout.scss */
+  /* line 174, ../sass/_layout.scss */
   .container .col.l8 {
     width: 66.6666666667%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 176, ../sass/_layout.scss */
+  /* line 179, ../sass/_layout.scss */
   .container .col.l9 {
     width: 75%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 181, ../sass/_layout.scss */
+  /* line 184, ../sass/_layout.scss */
   .container .col.l10 {
     width: 83.3333333333%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 186, ../sass/_layout.scss */
+  /* line 189, ../sass/_layout.scss */
   .container .col.l11 {
     width: 91.6666666667%;
   }
 }
 @media screen and (min-width: 993px) {
-  /* line 191, ../sass/_layout.scss */
+  /* line 194, ../sass/_layout.scss */
   .container .col.l12 {
     width: 100%;
   }
@@ -273,17 +274,17 @@ h1 {
 
 /* line 19, ../sass/_basic.scss */
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /* line 22, ../sass/_basic.scss */
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 /* line 25, ../sass/_basic.scss */
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* line 28, ../sass/_basic.scss */
