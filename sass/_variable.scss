@@ -3,6 +3,10 @@ $pad_screen: 768px;
 $desktop_screen: 993px;
 $bigger_screen: 1280px;
 
+//container width
+$container_width: 90%;
+$container_pad_width: 85%;
+
 //web style
 $web_font_family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', "Helvetica", "Arial", sans-serif;
 $web_font_size: 16px;
@@ -22,5 +26,8 @@ $color_03: #abcdef;
 
 //文字主要顏色
 $font_color_01: #444;
-$font_color_02: #000;
+$font_color_02: #22ac38;
 $font_color_03: #888;
+
+//cards 參數
+$cards_padding: 10px;

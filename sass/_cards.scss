@@ -1,0 +1,16 @@
+.cards {
+  margin-bottom: $content_mb;
+  padding: $cards_padding;
+  @include border-radius(5px);
+  & > .title_img {
+    background: $color_01;
+    margin: (-$cards_padding) (-$cards_padding) 0 (-$cards_padding);
+    line-height: 0;
+    overflow: hidden;
+    @include border-radius(5px 5px 0 0);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

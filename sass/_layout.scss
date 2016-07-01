@@ -7,16 +7,13 @@
 }
 .container {
   max-width: $bigger_screen;
-  width: 90%;
+  width: $container_width;
   margin: 0 auto;
   padding-left: $container_padding;
   padding-right: $container_padding;
   @extend .clearfix;
   @include pad_under {
-    width: 85%;
-  };
-  @include desktop_under {
-    width: 75%;
+    width: $container_pad_width;
   };
   @extend .clearfix;
   .section {
