@@ -29,6 +29,7 @@
   }
   .col {
     float: left;
+    width: 100%;
     padding-left: $container_padding;
     padding-right: $container_padding;
     &.s1 {
@@ -65,9 +66,6 @@
       width: 91.6666666667%;
     }
     &.s12 {
-      width: 100%;
-    }
-    &.m1, &.m2, &.m3, &.m4, &.m5, &.m6, &.m7, &.m8, &.m9, &.m10, &.m11, &.m12 {
       width: 100%;
     }
     &.m1 {
@@ -130,9 +128,6 @@
         width: 100%;
       }
     }
-    &.l1, &.l2, &.l3, &.l4, &.l5, &.l6, &.l7, &.l8, &.l9, &.l10, &.l11, &.l12 {
-      width: 100%;
-    }
     &.l1 {
       @include desktop_under {
         width: 8.3333333333%;
@@ -191,6 +186,97 @@
     &.l12 {
       @include desktop_under {
         width: 100%;
+      }
+    }
+  }
+}
+.nav {
+  position: relative;
+  width: 100%;
+  height: $nav_height;
+  margin-bottom: $content_mb;
+  @extend .clearfix;
+  &.fixed {
+    position: fixed;
+    z-index: 999;
+  }
+  .nav_rwd {
+    display: block;
+    float: right;
+    margin-top: 15px;
+    a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $font_color_01;
+      font-size: 2rem;
+      line-height: 40px;
+      text-align: center;
+      @include border-radius(5px);
+    }
+    @include pad_under {
+      display: none;
+    }
+  }
+  .nav_logo, .nav_inner, .nav_right {
+    height: $nav_height;
+  }
+  .nav_logo {
+    float: left;
+    margin-right: $container_padding;
+    a {
+      display: block;
+    }
+    h3 {
+      margin: 0;
+      padding: 0;
+      line-height: $nav_height;
+    }
+  }
+  .nav_inner {
+    display: none;
+    float: left;
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: $nav_height;
+    }
+    @include desktop_under {
+      display: block;
+    }
+  }
+  .nav_right {
+    display: none;
+    position: absolute;
+    top: $nav_height;
+    left: 0;
+    width: 100%;
+    @include pad_under {
+      display: block;
+      float: right;
+      position: relative;
+      top: 0;
+      right: 0;
+      width: auto;
+    }
+    ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    li {
+      display: block;
+      line-height: $nav_height;
+      @include pad_under {
+        display: inline-block;
+      }
+      a {
+        display: block;
+        padding: 0 1rem;
+        &:hover {
+          color: #FFF;
+          background: $color_01;
+        }
       }
     }
   }
