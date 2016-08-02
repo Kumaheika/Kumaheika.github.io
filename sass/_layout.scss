@@ -200,6 +200,12 @@
     position: fixed;
     z-index: 999;
   }
+  &.bg01 {
+    background-color: $nav_color;
+  }
+  &.shadow {
+    @include box-shadow($shadow_S);
+  }
   .nav_rwd {
     display: block;
     float: right;
