@@ -2,8 +2,8 @@
   float: left;
   position: relative;
   display: inline-block;
-  width: calc(100% / 3 - 30px );
-  height: 520px;
+  width: calc(100% / 4 - 30px );
+  height: 420px;
   background: #FFF;
   margin-bottom: $content_mb;
   padding: $cards_padding;
@@ -21,7 +21,7 @@
       height: auto;
     }
   }
-  h2 {
+  h3 {
     white-space: nowrap;
     overflow: hidden;
   }

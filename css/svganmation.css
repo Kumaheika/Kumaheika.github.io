@@ -476,8 +476,8 @@ a {
   float: left;
   position: relative;
   display: inline-block;
-  width: calc(100% / 3 - 30px );
-  height: 520px;
+  width: calc(100% / 4 - 30px );
+  height: 420px;
   background: #FFF;
   margin-bottom: 20px;
   padding: 10px;
@@ -503,7 +503,7 @@ a {
   height: auto;
 }
 /* line 24, ../sass/_cards.scss */
-.cards h2 {
+.cards h3 {
   white-space: nowrap;
   overflow: hidden;
 }
