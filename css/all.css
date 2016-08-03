@@ -476,18 +476,39 @@ a {
   float: left;
   position: relative;
   display: inline-block;
-  width: calc(100% / 4 - 30px );
-  height: 420px;
+  width: 100%;
+  height: 100vh;
   background: #FFF;
   margin-bottom: 20px;
-  padding: 10px;
-  margin: 15px;
   overflow: hidden;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 13, ../sass/_cards.scss */
+@media screen and (min-width: 768px) {
+  /* line 1, ../sass/_cards.scss */
+  .cards {
+    width: calc(100% / 2 - 30px );
+    height: 400px;
+    padding: 10px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 993px) {
+  /* line 1, ../sass/_cards.scss */
+  .cards {
+    width: calc(100% / 3 - 30px );
+    height: 420px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 1, ../sass/_cards.scss */
+  .cards {
+    width: calc(100% / 4 - 30px );
+    height: 440px;
+  }
+}
+/* line 25, ../sass/_cards.scss */
 .cards > .title_img {
   background: #22ac38;
   margin: -10px -10px 0 -10px;
@@ -497,26 +518,26 @@ a {
   -webkit-border-radius: 4px;
   border-radius: 4px 4px 0 0;
 }
-/* line 19, ../sass/_cards.scss */
+/* line 31, ../sass/_cards.scss */
 .cards > .title_img img {
   width: 100%;
   height: auto;
 }
-/* line 24, ../sass/_cards.scss */
+/* line 36, ../sass/_cards.scss */
 .cards h3 {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 30, ../sass/_cards.scss */
+/* line 42, ../sass/_cards.scss */
 .cards .card_tag ul, .cards .card_tag li {
   list-style: none;
   margin: 0;
 }
-/* line 34, ../sass/_cards.scss */
+/* line 46, ../sass/_cards.scss */
 .cards .card_tag ul {
   padding: 0;
 }
-/* line 37, ../sass/_cards.scss */
+/* line 49, ../sass/_cards.scss */
 .cards .card_tag li {
   display: block;
   float: left;
@@ -530,7 +551,7 @@ a {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 49, ../sass/_cards.scss */
+/* line 61, ../sass/_cards.scss */
 .cards .card_link {
   display: block;
   position: absolute;
@@ -540,7 +561,7 @@ a {
   height: 100%;
   background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 70%, #ffffff 84%, #ffffff 100%);
 }
-/* line 57, ../sass/_cards.scss */
+/* line 69, ../sass/_cards.scss */
 .cards .card_link:after {
   content: '前往頁面';
   display: inline-block;
@@ -558,7 +579,7 @@ a {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 70, ../sass/_cards.scss */
+/* line 82, ../sass/_cards.scss */
 .cards .card_link:hover:after {
   color: #FFF;
   background: #22ac38;

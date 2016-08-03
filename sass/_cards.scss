@@ -2,14 +2,26 @@
   float: left;
   position: relative;
   display: inline-block;
-  width: calc(100% / 4 - 30px );
-  height: 420px;
+  width: 100%;
+  height: 100vh;
   background: #FFF;
   margin-bottom: $content_mb;
-  padding: $cards_padding;
-  margin: $cards_marking;
   overflow: hidden;
   @include border-radius(4px);
+  @include pad_under {
+    width: calc(100% / 2 - 30px );
+    height: 400px;
+    padding: $cards_padding;
+    margin: $cards_marking;
+  }
+  @include desktop_under {
+    width: calc(100% / 3 - 30px );
+    height: 420px;
+  }
+  @include bigger_under {
+    width: calc(100% / 4 - 30px );
+    height: 440px;
+  }
   & > .title_img {
     background: $color_01;
     margin: (-$cards_padding) (-$cards_padding) 0 (-$cards_padding);
