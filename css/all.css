@@ -362,6 +362,59 @@
   background: #22ac38;
 }
 
+/* line 290, ../sass/_layout.scss */
+.content {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* --------  Footer --------*/
+/* line 295, ../sass/_layout.scss */
+.footer {
+  min-height: 120px;
+  background: #22ac38;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+/* line 301, ../sass/_layout.scss */
+.footer .footer_icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #FFF !important;
+  border: 1px solid #FFF;
+  padding: 5px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 309, ../sass/_layout.scss */
+.footer .footer_icon:hover {
+  color: #FFF;
+}
+/* line 313, ../sass/_layout.scss */
+.footer ul, .footer li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 318, ../sass/_layout.scss */
+.footer li {
+  display: inline-block;
+  margin: 10px;
+  padding: 0;
+}
+/* line 323, ../sass/_layout.scss */
+.footer p {
+  color: #FFF;
+  font-size: .8rem;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
 /* line 1, ../sass/_basic.scss */
 * {
   box-sizing: border-box;
