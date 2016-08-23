@@ -294,7 +294,7 @@
 /* --------  Footer --------*/
 .footer {
   min-height: $footer_height;
-  background: $color_01;
+  background: darken($color_01, 10%) url('../images/bg.png');
   text-align: center;
   padding: 20px 0;
   margin-top: 100px;
@@ -303,8 +303,8 @@
     width: 30px;
     height: 30px;
     color: #FFF !important;
-    border: 1px solid #FFF;
-    padding: 5px;
+    border: 2px solid #FFF;
+    padding: 2px;
     @include border-radius(50%);
     &:hover {
       color: #FFF;
