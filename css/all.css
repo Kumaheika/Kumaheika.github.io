@@ -7,6 +7,12 @@
 }
 
 /* line 8, ../sass/_layout.scss */
+.section_area {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* line 12, ../sass/_layout.scss */
 .container {
   max-width: 1280px;
   width: 95%;
@@ -15,15 +21,10 @@
   padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
-  /* line 8, ../sass/_layout.scss */
+  /* line 12, ../sass/_layout.scss */
   .container {
     width: 90%;
   }
-}
-/* line 19, ../sass/_layout.scss */
-.container .section {
-  width: 100%;
-  padding-bottom: 1rem;
 }
 /* line 23, ../sass/_layout.scss */
 .container .row {

@@ -5,6 +5,10 @@
     clear: both;
   }
 }
+.section_area {
+  padding-top: $section_padding;
+  padding-bottom: $section_padding;
+}
 .container {
   max-width: $bigger_screen;
   width: $container_width;
@@ -16,10 +20,6 @@
     width: $container_pad_width;
   };
   @extend .clearfix;
-  .section {
-    width: 100%;
-    padding-bottom: $section_padding;
-  }
   .row {
     width: 100%;
     margin-left: -$container_padding;
