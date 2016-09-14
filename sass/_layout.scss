@@ -13,8 +13,6 @@
   max-width: $bigger_screen;
   width: $container_width;
   margin: 0 auto;
-  padding-left: $container_padding;
-  padding-right: $container_padding;
   @extend .clearfix;
   @include pad_under {
     width: $container_pad_width;

@@ -42,11 +42,13 @@ a {
 //Title 效果
 .block_title {
   border-bottom: 1px solid #ddd;
+  margin-left: $container_padding;
+  margin-right: $container_padding;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   font-size: 1.2rem;
   line-height: $web_linehight;
-  color: $font_color_01;
+  color: $font_color_02;
 }
 
 //文字對齊
